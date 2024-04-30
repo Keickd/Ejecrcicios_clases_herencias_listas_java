@@ -1,0 +1,16 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Persona persona = new Persona("Manuel", "Perez", 42);
+		Bombero bombero = new Bombero("Tom", "Cruise", 56, true, 15.8);
+
+
+		persona.trabajar();
+		bombero.trabajar();
+
+	}
+
+}

@@ -1,0 +1,29 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("ssssssss");
+		Nodo nodoInicial = new Nodo(0);
+		Nodo nodoSegundo = new Nodo(1);
+		Nodo nodoTercero = new Nodo(2);
+		Nodo nodoUltimo = new Nodo(3);
+		
+		//nodoInicial.setAnterior(null);
+		nodoInicial.setSiguiente(nodoSegundo);
+		
+		nodoSegundo.setAnterior(nodoInicial);
+		nodoSegundo.setSiguiente(nodoTercero);
+
+		nodoTercero.setAnterior(nodoSegundo);
+		nodoTercero.setSiguiente(nodoUltimo);
+		
+		nodoUltimo.setAnterior(nodoTercero);
+		//nodoUltimo.setSiguiente(null);
+		
+		nodoInicial.toString();
+		nodoSegundo.toString();
+		nodoTercero.toString();
+		nodoUltimo.toString();
+	}
+
+}

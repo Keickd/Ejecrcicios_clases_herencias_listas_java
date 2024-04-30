@@ -1,0 +1,59 @@
+
+public class ListaEnlazada {
+
+	private Nodo nodoInicial;
+	private int num;
+	
+	public ListaEnlazada(int num) {
+		this.num = num;
+	}
+
+	
+	public void añadirAlInicio(int num) {
+		if(estaVacia()) {
+			nodoInicial = new Nodo(num);
+			return;
+		}
+		
+		Nodo nodoNuevo = new Nodo(num);
+		
+		nodoNuevo.setSiguiente(nodoInicial);
+		nodoInicial = nodoNuevo;
+	}
+	
+	public void añadirAlFinal(int num) {
+		if(estaVacia()) {
+			nodoInicial = new Nodo(num);
+			return;
+		}
+		
+		Nodo nodoActual = nodoInicial;
+		
+		while(nodoActual.getSiguiente() != null) {
+			nodoActual = nodoActual.getSiguiente();
+		}
+		nodoActual.setSiguiente(new Nodo(num));
+	}
+	
+	public boolean estaVacia() {
+		if (nodoInicial == null) return true;
+		return false;
+	}
+	
+	
+	public Nodo getNodoInicial() {
+		return nodoInicial;
+	}
+
+	public void setNodoInicial(Nodo nodoInicial) {
+		this.nodoInicial = nodoInicial;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+}

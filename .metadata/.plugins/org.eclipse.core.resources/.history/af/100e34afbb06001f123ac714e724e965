@@ -1,0 +1,13 @@
+
+public class Avion extends Aeroplano{
+
+	private String tipoMotor[];
+	
+	
+	public Avion(int numPasajeros, double cantidadCarga) {
+		super(numPasajeros, cantidadCarga);
+		tipoMotor = new String[2];
+		tipoMotor[0] = "propulsion";
+		tipoMotor[1] = "jet";
+	}
+}

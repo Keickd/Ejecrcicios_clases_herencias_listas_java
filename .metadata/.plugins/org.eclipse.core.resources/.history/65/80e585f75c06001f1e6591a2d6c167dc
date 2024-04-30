@@ -1,0 +1,13 @@
+
+public class Casa extends Edificio {
+	
+	private int numeroDormitorios;
+	private int numeroBaños;
+	
+	public Casa(int numeroPlantas, int numeroHabitaciones, double superficie, int numeroDormitorios, int numeroBaños) {
+		super(numeroPlantas, numeroHabitaciones, superficie);
+		this.numeroDormitorios = numeroDormitorios;
+		this.numeroBaños = numeroBaños;
+	}
+	
+}

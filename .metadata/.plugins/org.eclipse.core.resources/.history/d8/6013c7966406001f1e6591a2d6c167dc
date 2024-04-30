@@ -1,0 +1,23 @@
+
+public class Hora {
+
+	private int horas;
+	private int minutos;
+	private int segundos;
+	
+	public Hora() {
+		horas = 0;
+		minutos = 0;
+		segundos = 0;
+	}
+	
+	public Hora(boolean values) {
+		horas = 11;
+		minutos = 59;
+		segundos = 59;
+	}
+	
+	public void mostrarHora() {
+		System.out.println(horas + ":"+ minutos + ":" + segundos);
+	}
+}

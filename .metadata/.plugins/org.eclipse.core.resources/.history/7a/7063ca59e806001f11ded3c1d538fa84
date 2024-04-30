@@ -1,0 +1,30 @@
+
+public class ListaEnlazada {
+
+	private Nodo nodoInicial;
+	private int num;
+	
+	public ListaEnlazada(int num) {
+		this.num = num;
+	}
+
+	
+	
+	
+	
+	public Nodo getNodoInicial() {
+		return nodoInicial;
+	}
+
+	public void setNodoInicial(Nodo nodoInicial) {
+		this.nodoInicial = nodoInicial;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+}

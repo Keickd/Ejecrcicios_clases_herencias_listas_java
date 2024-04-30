@@ -1,0 +1,30 @@
+
+public class Garaje {
+
+	private int numPlazasGaraje;
+	private Vehiculo plazas[];
+	
+	public Garaje(int numPlazasGaraje) {
+		this.numPlazasGaraje = numPlazasGaraje;
+		plazas = new Vehiculo[numPlazasGaraje];
+	}
+
+	public int getNumPlazasGaraje() {
+		return numPlazasGaraje;
+	}
+
+	public void setNumPlazasGaraje(int numPlazasGaraje) {
+		this.numPlazasGaraje = numPlazasGaraje;
+	}
+
+	public Vehiculo[] getPlazas() {
+		return plazas;
+	}
+
+	public void setPlazas(Vehiculo[] plazas) {
+		this.plazas = plazas;
+	}
+
+	
+	
+}

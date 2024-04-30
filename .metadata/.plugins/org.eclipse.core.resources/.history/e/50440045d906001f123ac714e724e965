@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Fecha fecha = new Fecha(30,2,2020);
+		Fecha fecha2 = new Fecha(28,2,2020);
+		fecha.visualizar();
+		
+		fecha2.adelantar(2);
+		fecha2.visualizar();
+	}
+
+}

@@ -1,0 +1,24 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Nodo nodoInicial = new Nodo(0);
+		Nodo nodoSegundo = new Nodo(1);
+		Nodo nodoTercero = new Nodo(2);
+		Nodo nodoUltimo = new Nodo(3);
+		
+		nodoInicial.setAnterior(null);
+		nodoInicial.setSiguiente(nodoSegundo);
+		
+		nodoSegundo.setAnterior(nodoInicial);
+		nodoSegundo.setSiguiente(nodoTercero);
+
+		nodoTercero.setAnterior(nodoSegundo);
+		nodoTercero.setSiguiente(nodoUltimo);
+		
+		nodoUltimo.setAnterior(nodoTercero);
+		nodoUltimo.setSiguiente(null);
+	}
+
+}

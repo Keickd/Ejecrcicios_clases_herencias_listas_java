@@ -1,0 +1,16 @@
+package test;
+
+public class Bombero extends Persona {
+	
+	private boolean mangueraAbierta;
+	private float presionManguera;
+
+	public Bombero(String nombre, String apellido, int edad, String[] genero, boolean mangueraAbierta, float presionManguera) {
+		super(nombre, apellido, edad, genero);
+		this.mangueraAbierta = mangueraAbierta;
+		this.presionManguera = presionManguera;
+	}
+
+
+
+}

@@ -1,0 +1,89 @@
+
+public class Empleado {
+
+	private long DNI;
+	private double sueldoBase;
+	private double pagoHoraExtras;
+	private double horasExtrasAlMes;
+	private int tipoIRPF;
+	private boolean casado;
+	private int numeroHijos;
+	
+	public Empleado(long DNI) {
+		this.DNI = DNI;
+	}
+	
+	
+	public double devolucionComplementoHorasExtras() {
+		return pagoHoraExtras * horasExtrasAlMes;
+	}
+	
+	public double devolucionSueldoBruto() {
+		return devolucionComplementoHorasExtras() + sueldoBase;
+	}
+	
+	public double devolucionRetenciones() {
+		if(casado) {
+			return 
+		}
+	}
+	
+
+	public long getDNI() {
+		return DNI;
+	}
+
+	public void setDNI(long dNI) {
+		DNI = dNI;
+	}
+
+	public double getSueldoBase() {
+		return sueldoBase;
+	}
+
+	public void setSueldoBase(double sueldoBase) {
+		this.sueldoBase = sueldoBase;
+	}
+
+	public double getPagoHoraExtras() {
+		return pagoHoraExtras;
+	}
+
+	public void setPagoHoraExtras(double pagoHoraExtras) {
+		this.pagoHoraExtras = pagoHoraExtras;
+	}
+
+	public double getHorasExtrasAlMes() {
+		return horasExtrasAlMes;
+	}
+
+	public void setHorasExtrasAlMes(double horasExtrasAlMes) {
+		this.horasExtrasAlMes = horasExtrasAlMes;
+	}
+
+	public int getTipoIRPF() {
+		return tipoIRPF;
+	}
+
+	public void setTipoIRPF(int tipoIRPF) {
+		this.tipoIRPF = tipoIRPF;
+	}
+
+	public boolean isCasado() {
+		return casado;
+	}
+
+	public void setCasado(boolean casado) {
+		this.casado = casado;
+	}
+
+	public int getNumeroHijos() {
+		return numeroHijos;
+	}
+
+	public void setNumeroHijos(int numeroHijos) {
+		this.numeroHijos = numeroHijos;
+	}
+	
+	
+}

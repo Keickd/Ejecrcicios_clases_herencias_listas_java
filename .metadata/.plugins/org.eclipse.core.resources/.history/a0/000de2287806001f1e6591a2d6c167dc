@@ -1,0 +1,34 @@
+
+public class Estudiante extends Persona{
+
+	private String nExpediente;
+	private double nota;
+	
+	public Estudiante(String nombre, String direccion, String fechaDeNacimiento, String sexo, String nExpediente, double nota) {
+		super(nombre, direccion, fechaDeNacimiento, sexo);
+		this.nExpediente = nExpediente;
+		this.nota = nota;
+	}
+	
+	
+
+	public String getnExpediente() {
+		return nExpediente;
+	}
+
+	public void setnExpediente(String nExpediente) {
+		this.nExpediente = nExpediente;
+	}
+
+	public double getNota() {
+		return nota;
+	}
+
+	public void setNota(double nota) {
+		this.nota = nota;
+	}
+	
+	
+	
+	
+}

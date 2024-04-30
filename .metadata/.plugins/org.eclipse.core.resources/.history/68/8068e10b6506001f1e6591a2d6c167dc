@@ -1,0 +1,39 @@
+
+public class Hora {
+
+	private int horas;
+	private int minutos;
+	private int segundos;
+	
+	public Hora() {
+		horas = 0;
+		minutos = 0;
+		segundos = 0;
+	}
+	
+	public Hora(boolean values) {
+		horas = 11;
+		minutos = 59;
+		segundos = 59;
+	}
+	
+	public void mostrarHora() {
+		System.out.println(horas + ":"+ minutos + ":" + segundos);
+	}
+	
+	public Hora sumarHoras(Hora hora1, Hora hora2) {
+		int horas = hora1.horas + hora2.horas;
+		int minutos = hora1.minutos + hora2.minutos;
+		int segundos = hora1.segundos + hora2.minutos;
+		
+		if (horas > 23) {
+			horas %= 23; //horas = horas % 23 --> 26 / 23 = 1 mod - 1 = 2
+			horas -= 1;
+		}
+		if (minutos > 60) {
+			minutos %= 60
+		}
+		
+		Hora resHora = new Hora()
+	}
+}

@@ -1,0 +1,31 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		ListaEnlazada listaEnlazada = new ListaEnlazada();
+		
+		listaEnlazada.añadirAlInicio(0);
+		listaEnlazada.añadirAlFinal(1);
+		listaEnlazada.añadirAlFinal(2);
+		listaEnlazada.añadirAlFinal(3);
+		listaEnlazada.añadirAlFinal(5);
+		listaEnlazada.añadirDespuesDelNum(4, 3);
+		
+		listaEnlazada.mostrar();
+		
+		System.out.println();
+		
+		listaEnlazada.borrarAlInicio();
+		listaEnlazada.mostrar();
+		System.out.println();
+		
+		listaEnlazada.borrarAlFinal();
+		listaEnlazada.mostrar();
+		System.out.println();
+		
+		listaEnlazada.borrarPorNum(2);
+		listaEnlazada.mostrar();
+		System.out.println();
+	}
+
+}
